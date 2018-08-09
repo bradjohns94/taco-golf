@@ -1,0 +1,30 @@
+{
+  "name": "taco-golf.service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --port 8080 --hot --host 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "Bradley Johns",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "html-webpack-plugin": "^3.2.0",
+    "path": "^0.12.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "webpack": "^4.16.4",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
