@@ -5,6 +5,8 @@ services:
     build: ./frontend
     ports:
       - "${WWW_PORT:-8080}:${WWW_PORT:-8080}"
+    volumes:
+      - ./www/src/:/app/
     depends_on:
       - api
     environment:
@@ -15,6 +17,8 @@ services:
     hostname: ${API_HOSTNAME:-play.api}
     ports:
       - "${API_PORT:-9000}:${API_PORT:-9000}"
+    volumes:
+      - ./api/src/:/app/
     depends_on:
       - redis
     environment:
